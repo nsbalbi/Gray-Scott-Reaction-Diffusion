@@ -6,7 +6,7 @@
 
 ## Usage
 
-Simply call the function with the desired system constants and the model will be generated and recorded! Robert Munafo has a great breakdown of the system <a href="https://mrob.com/pub/comp/xmorphia/" target="_blank">**here**</a> that breaks down how it works and what each constant signifies. He also has an excellent compilation of example constants and classified outputs <a href="https://mrob.com/pub/comp/xmorphia/pearson-classes.html" target="_blank">**here**</a>. This function also allows for the customization of model grid size (performance limited), initial state, colormap, video name and file format, and many other paramters. See rxn_dfsn_gs.m for the full documentation and more examples.
+Simply call the function with the desired system constants and the model will be generated and recorded! This function also allows for the customization of model grid size (performance limited), initial state, colormap, video name and file format, and many other paramters. Robert Munafo has a great breakdown <a href="https://mrob.com/pub/comp/xmorphia/" target="_blank">**here**</a> that explains how the system works and what each constant signifies. He also has an excellent compilation of example constants and classified outputs <a href="https://mrob.com/pub/comp/xmorphia/pearson-classes.html" target="_blank">**here**</a>.  See rxn_dfsn_gs.m for the full documentation and more examples.
 
 ## Examples 
 

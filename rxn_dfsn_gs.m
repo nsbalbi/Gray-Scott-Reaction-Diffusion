@@ -3,30 +3,31 @@ function rxn_dfsn_gs(f,k,Du,Dv,options)
 % models using Euler's method.
 %
 %    RXN_DFSN_GS() generates a Gray-Scott reaction-diffusion
-%    model with sample coefficients. The result is saved as an MP4 named 
-%    'rxn_dfsn_gs.mp4'.
+%    model with sample coefficients. The result is saved as an AVI named 
+%    'rxn_dfsn_gs'.
 %
 %    RXN_DFSN_GS(f,k) generates a Gray-Scott reaction-diffusion
 %    model with standard diffusion coefficients, a rate of conversion k,
-%    and a feed rate f. The result is saved as an MP4 named 
-%    'rxn_dfsn_gs.mp4'. See "Inputs" for details.
+%    and a feed rate f. The result is saved as an AVI named 'rxn_dfsn_gs'. 
+%    See "Inputs" for details.
 %
 %    RXN_DFSN_GS(f,k,Du,Dv) generates a Gray-Scott reaction-diffusion
 %    model with the diffusion coefficients Du and Dv, rate of conversion k,
-%    and feed rate f. The result is saved as an MP4 named 
-%    'rxn_dfsn_gs.mp4'. See "Inputs" for details. 
+%    and feed rate f. The result is saved as an .AVI named 'rxn_dfsn_gs'.
+%    See "Inputs" for details. 
 % 
 %    RXN_DFSN_GS(...,PARAM1,VAL1,PARAM2,VAL2,...) are additional
 %    name-value pairs that can be used to change default function
 %    parameters. See "Parameters" for details.
 %
 % Inputs
+%    f: double. Feed rate. Recommended value between 0 and 0.1. Default
+%       is 0.04 
+%    k: double. Rate of conversion. Recommended value between 0 and 0.1. 
+%       Default is 0.0636
 %    Du,Dv: double. Diffusion coefficients for species u and v. All 
 %       equation constants are based off of the standard set of equations 
 %       for Gray-Scott systems. Default values are 1 and 0.5, respectively.
-%    f: Feed rate. Recommended value between 0 and 0.1. Default is 0.04 
-%    k: Rate of conversion. Recommended value between 0 and 0.1. Default is
-%       0.0636
 %
 % Parameters
 %    'GridSize': int. Edge length for the square grid used for the
@@ -46,9 +47,8 @@ function rxn_dfsn_gs(f,k,Du,Dv,options)
 %       (Default = 1)
 %    'Colormap': char. Colormap used for visualization. Supports all 
 %       default MATLAB colormaps (Default = 'jet')
-%    'FileName': char. Name and file format of created video. See the
-%       MATLAB help site for a list of supported video export formats.
-%       (Default = 'rxn_dfsn_gs.mp4')
+%    'FileName': char. Name of created video
+%       (Default = 'rxn_dfsn_gs')
 %
 %
 % Examples
@@ -78,7 +78,7 @@ arguments
    options.FrameSpacing int64 = 20
    options.dt double = 1
    options.Colormap char = 'jet'
-   options.FileName char = 'rxn_dfsn_gs.mp4'
+   options.FileName char = 'rxn_dfsn_gs'
 end
 
 %% Initialization

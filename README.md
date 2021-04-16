@@ -24,8 +24,6 @@ rxn_dfsn_gs(0.01,0.041,'InitState','wavefront');
 
 Experiment Away!
 
-![GS Render GIF](https://github.com/nsbalbi/Gray-Scott-Reaction-Diffusion/blob/master/GS%20Render%20GIF.gif)
-
 ## License
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
